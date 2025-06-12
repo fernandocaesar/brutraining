@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -7,126 +6,29 @@
     <title>Bruna Arruda: Emagrecimento Definitivo e Autoestima para Mulheres</title>
     <meta name="description" content="Transforme seu corpo e mente com Bruna Arruda. Método de emagrecimento definitivo e resgate da autoestima para mulheres 30+, mesmo sem tempo e após múltiplas tentativas. Descubra como seu corpo é seu templo.">
     
-    <!-- 1. Google Fonts: Inter -->
+    <!-- Google Fonts: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <!-- 2. Tailwind CDN (MOVED BEFORE CONFIGURATION) -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Link para o CSS gerado pelo Vite/Tailwind -->
+    <link rel="stylesheet" href="/index.css">
 
-    <!-- 3. Tailwind Custom Configuration -->
-    <script>
-      tailwind.config = {
-        theme: {
-          fontFamily: {
-            sans: [
-              'Inter', 
-              'ui-sans-serif', 
-              'system-ui', 
-              '-apple-system', 
-              'BlinkMacSystemFont', 
-              '"Segoe UI"', 
-              'Roboto', 
-              '"Helvetica Neue"', 
-              'Arial', 
-              '"Noto Sans"', 
-              'sans-serif', 
-              '"Apple Color Emoji"', 
-              '"Segoe UI Emoji"', 
-              '"Segoe UI Symbol"', 
-              '"Noto Color Emoji"'
-            ],
-          },
-          extend: {
-            // Outras extensões podem ir aqui (ex: colors, spacing)
-             typography: (theme) => ({
-              DEFAULT: {
-                css: {
-                  color: theme('colors.slate.700'),
-                  a: {
-                    color: theme('colors.indigo.600'),
-                    '&:hover': {
-                      color: theme('colors.amber.600'),
-                    },
-                  },
-                  h1: { color: theme('colors.indigo.800')},
-                  h2: { color: theme('colors.indigo.800')},
-                  h3: { color: theme('colors.indigo.700')},
-                  strong: { color: theme('colors.indigo.700')},
-                  blockquote: {
-                    borderColor: theme('colors.amber.500'),
-                    color: theme('colors.slate.600'),
-                  }
-                },
-              },
-              indigo: { // Custom prose class if needed, e.g., .prose-indigo
-                css: {
-                  '--tw-prose-body': theme('colors.slate[700]'),
-                  '--tw-prose-headings': theme('colors.indigo[800]'),
-                  '--tw-prose-lead': theme('colors.slate[600]'),
-                  '--tw-prose-links': theme('colors.indigo[700]'),
-                  '--tw-prose-bold': theme('colors.indigo[700]'),
-                  '--tw-prose-counters': theme('colors.indigo[500]'),
-                  '--tw-prose-bullets': theme('colors.indigo[500]'),
-                  '--tw-prose-hr': theme('colors.slate[200]'),
-                  '--tw-prose-quotes': theme('colors.slate[800]'),
-                  '--tw-prose-quote-borders': theme('colors.amber[500]'),
-                  '--tw-prose-captions': theme('colors.slate[500]'),
-                  '--tw-prose-code': theme('colors.indigo[900]'),
-                  '--tw-prose-pre-code': theme('colors.indigo[200]'),
-                  '--tw-prose-pre-bg': theme('colors.indigo[800]'),
-                  '--tw-prose-th-borders': theme('colors.slate[300]'),
-                  '--tw-prose-td-borders': theme('colors.slate[200]'),
-                }
-              }
-            }),
-          },
-        },
-        // A linha de plugins foi removida daqui e plugins como @tailwindcss/typography 
-        // são habilitados automaticamente ao usar a chave `typography` na configuração.
-      }
-    </script>
-
-    <!-- 4. Estilos personalizados adicionais -->
-    <style>
-      /* A fonte base 'Inter' agora é gerenciada pela configuração do Tailwind e seu Preflight */
-      /* Scrollbar styles */
-      .scrollbar-thin {
-        scrollbar-width: thin;
-        scrollbar-color: theme('colors.indigo.500') theme('colors.slate.100');
-      }
-      .scrollbar-thin::-webkit-scrollbar {
-        width: 8px;
-        height: 8px;
-      }
-      .scrollbar-thin::-webkit-scrollbar-track {
-        background: theme('colors.slate.100');
-        border-radius: 10px;
-      }
-      .scrollbar-thin::-webkit-scrollbar-thumb {
-        background-color: theme('colors.indigo.500');
-        border-radius: 10px;
-        border: 2px solid theme('colors.slate.100');
-      }
-      .scrollbar-thin::-webkit-scrollbar-thumb:hover {
-        background-color: theme('colors.indigo.600');
-      }
-    </style>
-
-    <script type="importmap">
+<script type="importmap">
 {
   "imports": {
-    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
-    "react/": "https://esm.sh/react@^19.1.0/",
     "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
     "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
-    "framer-motion": "https://esm.sh/framer-motion@^12.17.0",
-    "@google/genai": "https://esm.sh/@google/genai@^1.4.0"
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "framer-motion": "https://esm.sh/framer-motion@^12.17.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.4.0",
+    "path": "https://esm.sh/path@^0.12.7",
+    "vite": "https://esm.sh/vite@^6.3.5",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^4.5.2"
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
 </head>
 <body class="bg-slate-50 text-slate-800 antialiased">
     <div id="root"></div>

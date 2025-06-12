@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Variants } from 'framer-motion'; // Added import
 import { FAQItem, BlogArticle, Testimonial, MentoriaPlan, NavLink, ClientResultImage } from './types';
 
 export const SITE_NAME = "Bruna Arruda";
@@ -348,19 +349,19 @@ export const WhatsAppIcon: React.FC<{className?: string}> = ({className}) => (
 );
 
 
-export const sectionVariants = {
+export const sectionVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-export const itemVariants = {
+export const itemVariants: Variants = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut", delay: 0.2 } },
 };
 
-export const itemVariantsStagger = (index: number) => ({
+export const itemVariantsStagger = (index: number): Variants => ({
     hidden: { opacity: 0, y: 20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: index * 0.1 } },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5, delay: index * 0.1, ease: "easeOut" } },
 });
 
 
