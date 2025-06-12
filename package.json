@@ -1,4 +1,9 @@
 {
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/" }
+  ]
+}
+{
   "name": "bruna-arruda-fitness",
   "private": true,
   "version": "0.0.0",
