@@ -5,6 +5,9 @@ import { motion } from 'framer-motion';
 import { HomePage } from './components/HomePage';
 import { BlogPage } from './components/BlogPage';
 import { ArticlePage } from './components/ArticlePage'; 
+import { CoursesPage } from './components/CoursesPage';
+import { CourseDetailPage } from './components/CourseDetailPage';
+import { AdminPage } from './components/AdminPage';
 import { AnamnesisChatPage } from './components/AnamnesisChatPage';
 import { 
     SITE_NAME, 
@@ -145,6 +148,10 @@ const App: React.FC = () => {
           <Route path="/" element={<HomePage />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/blog/:slug" element={<ArticlePage />} /> 
+          <Route path="/cursos" element={<CoursesPage />} />
+          <Route path="/curso/:courseId" element={<CourseDetailPage />} />
+          <Route path="/curso/:courseId/:mode" element={<CourseDetailPage />} />
+          <Route path="/admin" element={<AdminPage />} />
           <Route path="/anamnese" element={<AnamnesisChatPage />} />
         </Routes>
       </main>

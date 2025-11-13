@@ -13,6 +13,10 @@ export default defineConfig(({ mode }) => {
     define: {
       // GEMINI_API_KEY deve ser o nome da variável de ambiente configurada no Vercel
       'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
+      'process.env.BUNNY_STORAGE_ZONE_NAME': JSON.stringify(env.BUNNY_STORAGE_ZONE_NAME),
+      'process.env.BUNNY_ACCESS_KEY': JSON.stringify(env.BUNNY_ACCESS_KEY),
+      'process.env.BUNNY_PULL_ZONE_URL': JSON.stringify(env.BUNNY_PULL_ZONE_URL),
+      'process.env.BUNNY_UPLOAD_URL': JSON.stringify(env.BUNNY_UPLOAD_URL),
     },
     resolve: {
       alias: {
