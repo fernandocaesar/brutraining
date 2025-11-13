@@ -129,7 +129,7 @@ const Footer: React.FC = () => {
           {/* Add other social media links here if available */}
         </div>
          <p className="text-sm">&copy; {new Date().getFullYear()} {SITE_NAME}. Todos os direitos reservados.</p>
-         <p className="text-xs mt-1">Desenvolvido com <span className="text-red-500">&hearts;</span> por <a href="https://ubie.com.br" target="_blank" rel="noopener noreferrer" className="hover:text-amber-400">ubie.com.br</a></p>
+         <p className="text-xs mt-1">Desenvolvido com <span className="text-red-500">&hearts;</span> por <a href="https://ubie.com.br" target=\"_blank" rel="noopener noreferrer\" className="hover:text-amber-400">ubie.com.br</a></p>
       </div>
     </footer>
   );
